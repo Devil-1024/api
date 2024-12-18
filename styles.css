@@ -1,0 +1,107 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .game-container {
+      margin-top: 20px;
+    }
+
+    #progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      height: 30px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    #treasure-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px; 
+      height: 30px;
+    }
+
+
+    #progress {
+      height: 100%;
+      width: 0%;
+      background-color: #4caf50;
+      border-radius: 15px;
+      text-align: center;
+      color: white;
+      line-height: 30px;
+    }
+
+    #progress img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px; 
+      height: 30px;
+    }
+
+    #log {
+      font-size: 18px;
+      color: #333;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+
+    #fight-options {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .fight-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .fight-button:hover {
+      background-color: #0056b3;
+    }
+
+    .fight-button:active {
+      background-color: #004085;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #restartButton {
+      background-color: #28a745;
+    }
+
+    #restartButton:disabled {
+      background-color: #f8f4f4;
+    }

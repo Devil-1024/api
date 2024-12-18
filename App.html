@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻宝游戏</title>
+    <link rel="icon" sizes="16x16" href="R-C.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="R-C.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="R-C.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <h1>欢迎来到烽火行动！</h1>
+    <p>点击下面的按钮开始摸金!</p>
+
+    <button id="startButton" class="button">开始摸金</button>
+    <button id="restartButton" class="button hidden">重开游戏</button>
+
+    <div id="progress-bar" class="hidden">
+      <div id="progress">0%</div>
+      <img id="treasure-icon" src="OIP-C.jpg" alt="宝藏图标">
+    </div>
+
+    <div id="textContent">Loading...</div>
+
+    <audio loop id="battleMusic" class="game-audio hidden">
+      <source src="b.ogg" type="audio/ogg">
+      您的浏览器不支持音频元素。
+    </audio>
+
+    <audio loop id="backgroundMusic">
+      <source src="a.ogg" type="audio/ogg">
+      您的浏览器不支持音频元素。
+    </audio>
+
+
+    <div id="fight-options">
+      <button id="fight-button" class="fight-button">正面刀战</button>
+      <button id="run-button" class="fight-button">偏头试探</button>
+    </div>
+
+
+    <div id="log" class="hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
